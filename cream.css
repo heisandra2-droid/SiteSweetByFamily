@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #1ac740;
+    color: #fffcfc;
+   
+    /* background-image: url(milk/pexels-mart-production-7577751.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5vh;
+    
+}
+/* .main_header{
+     background-image: url(tea/notrebonacceuil2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+.logo{
+    font-family: "Baloo 2", sans-serif;
+    /* padding-left: 3vw; */
+ 
+}
+.style_logo{
+    display: flex;
+    justify-content: safe;
+    padding-left: 5vw;
+ gap: 10px;
+}
+.logo1{
+    width: 12%;
+    border-radius: 50%;
+}
+.navbar{
+    background: #fffcfc;
+    /* padding: 10px; */
+    border-radius: 20px 20px 20px 20px;
+    width: 30%;
+    height: 7vh;
+    padding-top: 2vh;
+    align-items: center;
+    margin-right: 17%;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+    text-decoration: none;
+    color: #000;
+    background: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 20px;
+   
+}
+.navbar a.hover{
+    background: rgba(255, 255, 255, 0.2);
+}
+.navbar a:active{
+    background: #000;
+    color: #fff;
+}
+i{
+    padding-right: 3vw;
+}
+.text h1{
+    font-family: "Baloo 2",sans-serif;
+    font-size: 3vw;
+    width: 20vw;
+}
+.title{
+    margin-bottom: 3vh;
+}
+.text p{
+    width: 20vw;
+    color: #3f3c3c;
+}
+.content{
+    margin-left: 10%;
+}
+main{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: space-between;
+
+}
+.btn{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+.primary {
+    background-color: #ffd166;
+    color: #000;
+}
+.primary:hover{
+    background: #ffb703;
+}
+.secondary{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.secondary:hover{
+    background: #fff;
+    color: #000;
+}
+.img_sans_fond{
+    margin-right: 30%;
+    margin-top: -10vh;
+}
+.img{
+    width: 38vw;
+    height: 85vh;
+}
+.acceuil{
+    background-color: #fae9bb;
+    width: 100%;
+     
+}
+.acceuil h2{
+    color: #744525;
+    font-family: "Baloo 2",sans-serif;
+    text-align: center;
+   align-items: center;
+   display: flex;
+   margin-left: 35%;
+    font-size: 25px;
+    width: 25%;
+    height: 100vh;
+}
+.menu{
+    width: 100%;
+    height: 100vh;
+}
+.declaration{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5vh;
+}
+.declaration h2{
+    /* font-size: 20px; */
+    font-family: "Baloo", sans-serif;
+    width: 15vw;
+    padding-left: 2vw;
+}
+.declaration p{
+    width: 25vw;
+}
+.milk{
+    height: 35vh;
+}
+.menu_list{
+    color:#000000;
+    text-align: center;
+   display: block;
+   justify-content: start;
+   
+    background-color: #fff;
+}
+.price{
+    font-size: 20px;
+    
+}
+.buy{
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px 20px 20px 20px;
+    border: none;
+    border-color: #fff;
+    width: 8vw;
+    height: 5vh;
+}
+.bg_color{
+   
+    width: 9vw;
+    
+}
+@media  (width <= 720) {
+    
+}
