@@ -1,202 +1,397 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background: #1ac740;
+
+body {
+    background: #ffffff;
+
     color: #fffcfc;
-   
-    /* background-image: url(milk/pexels-mart-production-7577751.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; */
 }
-header{
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 1.5vh;
-    
+    position: sticky;
 }
-/* .main_header{
-     background-image: url(tea/notrebonacceuil2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
-.logo{
+
+.logo {
     font-family: "Baloo 2", sans-serif;
-    /* padding-left: 3vw; */
- 
 }
-.style_logo{
+
+.block {
+    display: none;
+}
+
+.style_logo {
     display: flex;
     justify-content: safe;
     padding-left: 5vw;
- gap: 10px;
+    gap: 10px;
 }
-.logo1{
+
+.logo1 {
     width: 12%;
     border-radius: 50%;
 }
-.navbar{
-    background: #fffcfc;
-    /* padding: 10px; */
+
+.navbar {
+    background: #22e44c;
     border-radius: 20px 20px 20px 20px;
-    width: 30%;
-    height: 7vh;
+    width: 33%;
+    height: 8vh;
     padding-top: 2vh;
     align-items: center;
     margin-right: 17%;
 }
-.navbar ul{
+
+.navbar ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 20px;
 }
-.navbar li{
+
+.navbar li {
     list-style: none;
 }
-.navbar a{
+
+.navbar a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     text-decoration: none;
     color: #000;
     background: transparent;
-    transition: all 0.3s ease;
+    transition: 0.3s;
     cursor: pointer;
     padding: 8px 15px;
     border-radius: 20px;
-   
+
 }
-.navbar a.hover{
-    background: rgba(255, 255, 255, 0.2);
+
+.navbar a:hover {
+    background: #8a8a8a;
+    color: #fff;
 }
-.navbar a:active{
+
+.navbar a:active {
     background: #000;
     color: #fff;
 }
-i{
+
+i {
     padding-right: 3vw;
 }
-.text h1{
-    font-family: "Baloo 2",sans-serif;
+
+.text h1 {
+    font-family: "Baloo 2", sans-serif;
     font-size: 3vw;
     width: 20vw;
 }
-.title{
+
+.title {
     margin-bottom: 3vh;
 }
-.text p{
+
+.text p {
     width: 20vw;
     color: #3f3c3c;
 }
-.content{
+
+.content {
     margin-left: 10%;
 }
-main{
+
+main {
     margin-top: 15vh;
     display: flex;
     justify-content: space-between;
-
 }
-.btn{
+
+.btn {
     padding: 10px 20px;
     border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,sans-serif;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-.btn:hover{
+
+.btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
+
 .primary {
     background-color: #ffd166;
     color: #000;
 }
-.primary:hover{
+
+.primary:hover {
     background: #ffb703;
 }
-.secondary{
+
+.secondary {
     background: transparent;
     border: 1px solid #fff;
     color: #fff;
 }
-.secondary:hover{
+
+.secondary:hover {
     background: #fff;
     color: #000;
 }
-.img_sans_fond{
+
+.img_sans_fond {
     margin-right: 30%;
     margin-top: -10vh;
+    position: relative;
 }
-.img{
+
+.img {
     width: 38vw;
     height: 85vh;
 }
-.acceuil{
-    background-color: #fae9bb;
-    width: 100%;
-     
+
+.side-img {
+    width: 200px;
+    position: absolute;
+    right: -100px;
+    top: 20px;
+    opacity: 0.8;
 }
-.acceuil h2{
-    color: #744525;
-    font-family: "Baloo 2",sans-serif;
+
+.small-img {
+    width: 150px;
+    position: absolute;
+    right: -300px;
+    top: 20px;
+    opacity: 0.6;
+}
+.slider{
+    background: #fff;
+    height: 20vh;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px 20px 20px 20px;
+    width: 90%;
+   margin-left: 5%;
+   margin-right: 5%;
+   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+}
+.slide-track{
+    display: flex;
+    /* width: calc(200px * 10); */
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+.slide-track img{
+    height: 20vh;
+    /* width: 100px; */
+    width: 100px;
+    object-fit: cover;
+   /* flex-shrink: 0;  empêche les img de se compresser
+    /* border-radius: 30%; */
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+#order{
+    font-weight: 700;
+    color: #fff;
+    font-family: "Baloo 2", sans-serif;
+    font-size: 30px;
     text-align: center;
-   align-items: center;
-   display: flex;
-   margin-left: 35%;
-    font-size: 25px;
-    width: 25%;
+    width: 350px;
+    margin-top: 3vh;
+}
+.custom-line{
+   position: relative;
+   display: inline-block;
+    text-shadow:0 15px 15px #e68900;
+    color: #f5c071;
+}
+.custom-line::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 65%;
+    width: 100%;
+    height: 2px;
+    background: orange;
+    transform: translateY(-50%);
+   
+}
+.commande{
+    width: 350px;
+    display: flow-root;
+
+}
+.commande img{
+      margin-left: 5vw;
+}
+.commande a{
+       margin-bottom: 20vh;
+}
+.btn-order{
+    background: #3ebd18;
+    padding: 12px 25px;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 25px;
+    transition: 0.3s;
+    margin-left: 5vw;
+  
+}
+.btn-order:hover{
+   background: #e68900;
+   transform: scale(1.05);
+}
+#sweat{
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(135deg, #3cdd44, #2b8b30);
+    align-items: center;
+/* margin-left: 5%;
+margin-right: 5%; */
     height: 100vh;
+    border-radius: 50px 50px 30px 30px;
+    /* width: 90%; */
 }
 .menu{
-    width: 100%;
-    height: 100vh;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
-.declaration{
+.menu h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2e7d32;
+
+}
+.section{
+    margin-bottom: 20px;
+}
+.section h2{
+    margin-bottom: 10px;
+    color: #388e3c;
+    border-bottom: 2px solid #66bb6a;
+    padding-bottom: 5px;
+}
+.item{
     display: flex;
     justify-content: space-between;
-    padding-top: 5vh;
+    padding: 5px 0;
+    font-size: 14px;
 }
-.declaration h2{
-    /* font-size: 20px; */
-    font-family: "Baloo", sans-serif;
-    width: 15vw;
-    padding-left: 2vw;
+.item span{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.declaration p{
-    width: 25vw;
+.item span:last-child{
+    font-weight: bold;
 }
-.milk{
-    height: 35vh;
+.icon{
+    font-size: 30px;
 }
-.menu_list{
-    color:#000000;
-    text-align: center;
-   display: block;
-   justify-content: start;
-   
-    background-color: #fff;
-}
-.price{
-    font-size: 20px;
-    
-}
-.buy{
-    background-color: #000;
-    color: #fff;
-    border-radius: 20px 20px 20px 20px;
+#button{
+    font-size: 1.5vw;
+    width: 4vw;
     border: none;
-    border-color: #fff;
-    width: 8vw;
-    height: 5vh;
+    background: #fff;
+    border-radius: 10px;
 }
-.bg_color{
-   
-    width: 9vw;
-    
+
+#menu {
+    width: 90%;
+    height: 100vh;
+    background-image: url(milk/pexels-freestockpro-322461.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px 30px 20px 20px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
-@media  (width <= 720) {
-    
+
+.declaration h2 {
+    font-family: "Baloo", sans-serif;
+    padding-top: 5vh;
+    align-items: center;
+    text-align: center;
+}
+
+/* Carte produit */
+.menu_list {
+    justify-content: space-around;
+    display: flex;
+}
+
+/* Fond blanc */
+.bg_color {
+    background: #fff;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 5px 10px 25px rgba(73, 65, 65, 0.589);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 14vw;
+    height: 37vh;
+}
+
+.bg_color:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.child {
+    color: #000;
+}
+
+/* Image DANS la carte */
+.milk {
+    width: 14vw;
+    border-radius: 10% 10% 0 0;
+    height: 25vh;
+}
+
+/* Prix */
+.price {
+    font-weight: bold;
+    font-size: 18px;
+
+    color: #413f3f;
+}
+
+/* Bouton */
+.buy {
+    margin-top: -1px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 15px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(245, 235, 235, 0.3);
+}
+
+.buy:hover {
+    background: #44434359;
+    color: #ff1515;
 }
