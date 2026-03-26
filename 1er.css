@@ -1,0 +1,220 @@
+ @media screen and (width >= 350px) {
+    .main_header{
+        border-radius: 0 0 20px 20px;
+    }
+    header{
+        justify-content: space-around;
+    }
+    .logo1 {
+        width: 15%;
+    }
+
+    .logo {
+        font-size: 25px;
+        align-items: center;
+    }
+
+     .navbar {
+        display: none;
+    }
+    .text{
+        margin-left: 10%;
+    }
+    .text h1{
+        font-size: 6vw;
+        width: 35vw;
+    }
+    .text p{
+        width: 40vw;
+    }
+    main{
+        margin-top: 15vh;
+    }
+  .primary{
+    margin-left: 13%;
+  }
+  .secondary{
+        display: block;
+        width: 37vw;
+        position: relative;
+        top: 5vh;
+    }
+    .img{
+        width: 60vw;
+        height: 60vh;
+        position: relative;
+        bottom: 10vh;
+    }
+
+    .side-img{
+        display: none;
+    }
+    .small-img{
+        display: none;
+    }
+    .acceuil h2{
+        width: 50%;
+        text-align: center;
+        align-items: center;
+        margin-left: 25%;
+    }
+    #sweat{
+        display: flex;
+        flex-wrap: wrap;
+        height: 170vh;
+    }
+    .commande img{
+        width: 20vw;
+        height: 10vh;
+        margin-left: 40%;
+        margin-top: 5vh;
+    }
+    .btn-order{
+        margin-left: 25%;
+    }
+    .menu{
+        margin-top: 1vh;
+       width: 300px;
+       margin-left: 10%;
+    }
+    #button{
+        margin-left: 3vw;
+        font-size: 3vw;
+         width: 4vw;
+    }
+    #menu{
+        max-width: 100%;
+   width: 100%;  
+      margin-top: 5vh;
+}
+.menu_list{
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.bg_color{
+    width: 15vw;
+    height: 20vh;
+}
+.milk{
+     width: 15vw;
+     height: 10vh;
+}
+} 
+@media screen and (width>=720px) {
+   
+    .main_header {
+        border-radius: 0 0 20px 20px;
+    }
+      .navbar {
+        display: block;
+        margin-top: 3vh;
+    }
+     .text{
+        margin-left: 0%;
+    }
+
+    .text h1 {
+        font-size: 5vw;
+        width: 30vw;
+    }
+
+    .text p {
+        width: 20vw;
+        color: #dad8d8;
+    }
+     .side-img{
+        display: block;
+    }
+    .small-img{
+        display: block;
+    }
+
+    .content {
+        margin-left: 10%;
+    }
+    main{
+        margin-top: 15vh;
+        justify-content: space-between;
+    }
+    .primary{
+    margin-left: 0%;
+  }
+     .secondary{
+        display: block;
+        width: 12vw;
+        position: relative;
+        top: -4.5vh;
+        left: 10vw;
+    }
+    .img_sans_fond {
+    margin-right: 30%;
+    margin-top: -10vh;
+    position: relative;
+}
+.img {
+    width: 38vw;
+    height: 85vh;
+}
+.side-img {
+    width: 200px;
+    position: absolute;
+    right: -90px;
+    top: 20px;
+    opacity: 0.8;
+}
+.small-img {
+    width: 150px;
+    position: absolute;
+    right: -270px;
+    top: 20px;
+    opacity: 0.6;
+}
+#order{
+    font-weight: 700;
+    color: #fff;
+    font-family: "Baloo 2", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    width: 350px;
+    margin-top: 3vh;
+}
+.commande{
+    width: 350px;
+    display: flow-root;
+
+}
+.commande img{
+    margin-left: 13vh;
+        width: 15vw;
+        height: 25vh;
+}
+.btn-order{
+     margin-left: 5vw;
+}
+#sweat{
+     justify-content: space-evenly;
+     height: 100vh;
+}
+  #button{
+        margin-left: 0;
+        font-size: 1.5vw;
+         width: 4vw;
+    }
+#menu{
+   width: 90%;  
+   margin-left: 5%;
+    margin-right: 5%;
+      margin-top: 5vh;
+}
+.menu_list{
+     justify-content: space-around;
+}
+.bg_color{
+     width: 14vw;
+    height: 37vh;
+}
+.milk{
+     width: 14vw;
+     height: 25vh;
+}
+}

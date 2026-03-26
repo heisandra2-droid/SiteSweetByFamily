@@ -9,13 +9,16 @@ body {
 
     color: #fffcfc;
 }
-
+.main_header{
+    background-image: url(removebg/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1.5vh;
-    position: sticky;
 }
 
 .logo {
@@ -39,7 +42,7 @@ header {
 }
 
 .navbar {
-    background: #22e44c;
+    background: #ffffff;
     border-radius: 20px 20px 20px 20px;
     width: 33%;
     height: 8vh;
@@ -88,27 +91,27 @@ i {
 
 .text h1 {
     font-family: "Baloo 2", sans-serif;
-    font-size: 3vw;
-    width: 20vw;
+    /* font-size: 3vw;
+    width: 20vw; */
 }
 
 .title {
     margin-bottom: 3vh;
 }
 
-.text p {
+/* .text p {
     width: 20vw;
-    color: #3f3c3c;
-}
+    color: #dad8d8;
+} */
 
-.content {
+/* .content {
     margin-left: 10%;
-}
+} */
 
 main {
-    margin-top: 15vh;
+    /* margin-top: 15vh; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .btn {
@@ -140,6 +143,7 @@ main {
     background: transparent;
     border: 1px solid #fff;
     color: #fff;
+
 }
 
 .secondary:hover {
@@ -147,32 +151,32 @@ main {
     color: #000;
 }
 
-.img_sans_fond {
+/* .img_sans_fond {
     margin-right: 30%;
     margin-top: -10vh;
     position: relative;
-}
+} */
 
-.img {
+/* .img {
     width: 38vw;
     height: 85vh;
-}
+} */
 
-.side-img {
+/* .side-img {
     width: 200px;
     position: absolute;
-    right: -100px;
+    right: -90px;
     top: 20px;
     opacity: 0.8;
-}
+} */
 
-.small-img {
+/* .small-img {
     width: 150px;
     position: absolute;
-    right: -300px;
+    right: -270px;
     top: 20px;
     opacity: 0.6;
-}
+} */
 .slider{
     background: #fff;
     height: 20vh;
@@ -214,8 +218,8 @@ main {
     font-family: "Baloo 2", sans-serif;
     font-size: 30px;
     text-align: center;
-    width: 350px;
-    margin-top: 3vh;
+    /* width: 350px;
+    margin-top: 3vh; */
 }
 .custom-line{
    position: relative;
@@ -234,14 +238,15 @@ main {
     transform: translateY(-50%);
    
 }
-.commande{
+/* .commande{
     width: 350px;
     display: flow-root;
 
-}
+} 
 .commande img{
       margin-left: 5vw;
 }
+*/
 .commande a{
        margin-bottom: 20vh;
 }
@@ -254,7 +259,7 @@ main {
     text-align: center;
     border-radius: 25px;
     transition: 0.3s;
-    margin-left: 5vw;
+    /* margin-left: 5vw; */
   
 }
 .btn-order:hover{
@@ -263,14 +268,12 @@ main {
 }
 #sweat{
     display: flex;
-    justify-content: space-evenly;
-    background: linear-gradient(135deg, #3cdd44, #2b8b30);
+    /* justify-content: space-evenly; */
+    background: linear-gradient(135deg, #0b6910, #3df046);
     align-items: center;
-/* margin-left: 5%;
-margin-right: 5%; */
     height: 100vh;
     border-radius: 50px 50px 30px 30px;
-    /* width: 90%; */
+    
 }
 .menu{
     background: #ffffff;
@@ -285,9 +288,9 @@ margin-right: 5%; */
     color: #2e7d32;
 
 }
-.section{
+/* .section{
     margin-bottom: 20px;
-}
+} */
 .section h2{
     margin-bottom: 10px;
     color: #388e3c;
@@ -311,22 +314,21 @@ margin-right: 5%; */
     font-size: 30px;
 }
 #button{
-    font-size: 1.5vw;
-    width: 4vw;
+   
     border: none;
     background: #fff;
     border-radius: 10px;
 }
 
 #menu {
-    width: 90%;
+    /* width: 90%; */
     height: 100vh;
     background-image: url(milk/pexels-freestockpro-322461.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 30px 30px 20px 20px;
-    margin-left: 5%;
-    margin-right: 5%;
+    /* margin-left: 5%;
+    margin-right: 5%; */
 }
 
 .declaration h2 {
@@ -338,7 +340,7 @@ margin-right: 5%; */
 
 /* Carte produit */
 .menu_list {
-    justify-content: space-around;
+    /* justify-content: space-around; */
     display: flex;
 }
 
@@ -350,8 +352,8 @@ margin-right: 5%; */
     box-shadow: 5px 10px 25px rgba(73, 65, 65, 0.589);
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 14vw;
-    height: 37vh;
+    /* width: 14vw;
+    height: 37vh; */
 }
 
 .bg_color:hover {
@@ -365,9 +367,10 @@ margin-right: 5%; */
 
 /* Image DANS la carte */
 .milk {
-    width: 14vw;
+    /* width: 14vw;
+     height: 25vh; */
     border-radius: 10% 10% 0 0;
-    height: 25vh;
+   
 }
 
 /* Prix */
